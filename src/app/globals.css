@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  ::selection {
+    background-color: #F59E0B;
+    color: #0F172A;
+  }
+}
+
+@layer components {
+  .prose-ticker {
+    @apply prose prose-slate max-w-none;
+    @apply prose-headings:text-navy prose-headings:font-bold;
+    @apply prose-a:text-amber prose-a:no-underline hover:prose-a:text-amber-dark;
+    @apply prose-img:rounded-xl prose-img:shadow-md;
+    @apply prose-blockquote:border-amber prose-blockquote:text-slate-600;
+    @apply prose-strong:text-navy;
+  }
+}
